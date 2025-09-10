@@ -7,7 +7,7 @@
 # dsPIC33C Power Board Visualizer V3 Demo
 
 ## Summary
-This is a code example demonstrating the new features of the Power Board Visualizer V3 software. This demo is designed using [dsPIC33AK512MPS506 Digital Power PIM](https://www.microchip.com/EV42F30A).This readme also aims to provide initial guide on how to setup the controller peripherals using Microchip Code Configurator (MCC) as well as a brief description on provided example drivers.
+This is a code example demonstrating the new features of the Power Board Visualizer V3 software. This demo is designed using [dsPIC33AK512MPS506 Digital Power PIM](https://www.microchip.com/EV42F30A).
 
 With the introduction of new A-core devices that natively support 32-bit and 64-bit data types, including single and double precision floating point numbers, PBV had to be upgraded to handle these data types using the same underlying hardware layers as before. For more information please refer to the users guide.
 
@@ -17,7 +17,7 @@ This document is intended as a supplement to the user's guide. The user's guide 
 
 
 ## Software Used 
-- [Power Board Visualizer GUI](https://www.microchip.com/SWLibraryWeb/product.aspx?product=POWER_BOARD_VISUALIZER)
+- [Power Board Visualizer GUI](https://www.microchip.com/en-us/software-library/power-board-visualizer)
 - [MPLAB&reg; X IDE v6.25](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide)
 - [MPLAB&reg; X IPE v6.25](https://www.microchip.com/en-us/tools-resources/production/mplab-integrated-programming-environment)
 - [MPLAB&reg; XC-DSC Compiler v3.21](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers)
@@ -35,7 +35,8 @@ This document is intended as a supplement to the user's guide. The user's guide 
 This section will guide the user on how to do hardware setup, program the device and run the demo.
 
 ### Hardware Setup UART
-For UART the hardware required is minimal. Along with the DP-PIM and Digital Power Development board, A usb-c cable is needed to power the Digital Power Development Board as well transfer data from DP-PIM. The DP-PIM has MCP2221A USB to UART/I2C serial converter. This means that no additional hardware is needed for UART commuincation. 
+For UART the hardware required is minimal. Along with the DP-PIM and Digital Power Development board, A USB-
+C cable is needed to power the Digital Power Development Board as well transfer data from DP-PIM. The DP-PIM has MCP2221A USB to UART/I2C serial converter. This means that no additional hardware is needed for UART commuincation. 
 
 Steps: 
 - Insert the DP-PIM to the J1 header on the Digital Power Development Board. 
@@ -51,9 +52,6 @@ Steps:
 - Insert can transciever click board on J10 connector on the Digital Power Development Board.
 - Connect the CAN FD dongle using a DB9 cable to the click board.
 
-<!---
-![Setup](images/schematic.png)  
--->
 
 <div>
   <p>

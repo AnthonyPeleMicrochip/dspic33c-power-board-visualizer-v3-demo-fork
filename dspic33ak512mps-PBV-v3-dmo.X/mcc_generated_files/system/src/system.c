@@ -53,7 +53,9 @@ void SYSTEM_Initialize(void)
     ADC2_Initialize();
     ADC3_Initialize();
     ADC4_Initialize();
+    #if (PBV_CANFD == 1)
     CAN1_Initialize();
+    #endif
     DMT_Initialize();
     PWM_Initialize();
     TMR1_Initialize();
